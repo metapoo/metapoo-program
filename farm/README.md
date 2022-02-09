@@ -6,7 +6,7 @@ What is Metapoo and other non-Technical Documentation
 
 ## Technical Documentation
 
-# Deploy program to the solana blockchain
+### Deploy program to the solana blockchain
 1. Create a program keypair, save it to dist folder
     ```
     yarn keypair
