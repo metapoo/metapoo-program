@@ -1,0 +1,25 @@
+{
+  "name": "farm",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "keypair": "solana-keygen new --outfile dist/farm-keypair.json",
+    "pubkey": "solana-keygen pubkey dist/farm-keypair.json",
+    "build": "cargo build-bpf --manifest-path=./program/Cargo.toml --bpf-out-dir=dist",
+    "deploy": "solana program deploy dist/farm.so",
+    "idl": "anchor idl parse -f program/src/lib.rs -o dist/idl.json"
+  },
+  "dependencies": {
+    "@metaplex-foundation/mpl-token-metadata": "^0.0.2",
+    "@metaplex/js": "^4.10.0",
+    "@project-serum/anchor": "0.18.2",
+    "@project-serum/associated-token": "^0.1.1",
+    "@solana/spl-token": "^0.1.5",
+    "yaml": "^1.10.2"
+  },
+  "engines": {
+    "node": ">= 14"
+  },
+  "devDependencies": {
+  }
+}
