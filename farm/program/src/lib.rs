@@ -8,7 +8,7 @@ use {
 };
 
 // set the program's public key
-declare_id!("4Zqz7sSAxU4qtvHNdyYQ4J2KGDM7oqAhXLYDkpeFSvJR");
+declare_id!("");
 
 const POOL_IMPRINT: &[u8] = b"imprint";
 const POOL_LP_ACCOUNT_SEED: &[u8] = b"pool_lp_account";
